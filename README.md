@@ -17,12 +17,17 @@ Prerequisites:
 
 Then run:
 
+To upload new nft:
 ```
-node ./uploader.js
+node ./importer.js mainnet-beta
+node ./uploader.js mainnet-beta
+```
 
-# or
-
-node run upload
+To upgrade current nft:
+```
+node ./loader.js mainnet-beta
+# load image, fix some json
+node ./uploader.js mainnet-beta
 ```
 
 The result json file will be saved to `./public/arweave-images.json`. This files consists of arrays of NFT objects with name / uri fields

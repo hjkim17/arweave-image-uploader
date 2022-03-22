@@ -10,6 +10,12 @@
 
 # production
 /build
+/public/*/image_imports
+/public/*/image_uploads
+/public/*/image_pool
+arweave-wallet.json
+solana-wallet.json
+imports_bak.json
 
 # misc
 .DS_Store
